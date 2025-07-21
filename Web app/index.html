@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking System</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>SmartPark</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#find-parking">Find Parking</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Find Your Perfect Parking Spot</h1>
+            <p>Discover convenient and affordable parking spaces near you</p>
+            <div class="search-box">
+                <input type="text" placeholder="Enter location or landmark">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i> Find Parking
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="services">
+        <h2>Our Services</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Nearest Parking</h3>
+                <p>Find the closest available parking spots to your destination</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Best Prices</h3>
+                <p>Compare prices and find the most affordable parking options</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>Real-time Updates</h3>
+                <p>Get live updates on parking availability and rates</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure Parking</h3>
+                <p>All parking locations are monitored and secure</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Parking Section -->
+    <section class="find-parking" id="find-parking">
+        <h2>Find Parking</h2>
+        <div class="parking-search">
+            <div class="search-filters">
+                <select class="filter">
+                    <option value="">Sort by Price</option>
+                    <option value="low-high">Low to High</option>
+                    <option value="high-low">High to Low</option>
+                </select>
+                <select class="filter">
+                    <option value="">Distance</option>
+                    <option value="nearest">Nearest First</option>
+                    <option value="5km">Within 5 km</option>
+                </select>
+                <select class="filter">
+                    <option value="">Facilities</option>
+                    <option value="covered">Covered Parking</option>
+                    <option value="security">24/7 Security</option>
+                    <option value="ev">EV Charging</option>
+                </select>
+            </div>
+            <div class="parking-results">
+                <!-- Parking results will be dynamically populated -->
+                <div class="parking-card">
+                    <img src="https://via.placeholder.com/150" alt="Parking Location">
+                    <div class="parking-info">
+                        <h3>Central Parking</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Main St</p>
+                        <p><i class="fas fa-dollar-sign"></i> $2/hour</p>
+                        <p><i class="fas fa-car"></i> 50 spots available</p>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SmartPark</h3>
+                <p>Making parking easier and more convenient for everyone.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#find-parking">Find Parking</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SmartPark. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
